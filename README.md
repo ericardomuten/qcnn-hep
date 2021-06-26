@@ -14,7 +14,7 @@
 
 ## Mentors
 
-[Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), Dr. Emanuele Usai(https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
+[Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), [Dr. Emanuele Usai](https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
 
 ## Abstract
 
