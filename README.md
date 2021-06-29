@@ -21,3 +21,12 @@
 One of the challenges in High-Energy Physics (HEP) is events classification, which is to predict whether an image of particle jets belongs to events being sought after or just background signals. Classical Convolutional Neural Network (CNN) has been proven a powerful algorithm in image classification, including jets image. As quantum computers promise many advantages over classical computing, comes a question on whether quantum machine learning (QML) can give any improvement in solving the problem.
 
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
+
+## Weekly Progress
+- Week 1: Looking and getting used to the dataset, train a classical ResNet model as a baseline.
+- Week 2: Coding the graph-convolution preprocessing[[1](#references)] and Quantum Conv layer with data re-uploading PQC.
+- Week 3: (on progress).
+
+## References
+[1] Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network. https://arxiv.org/abs/2101.06189
+[2] Pérez-Salinas, A, Cervera-Lierta, A, Gil-Fuster, E, Latorre, J. "Data re-uploading for a universal quantum classifier". Quantum 2020; 4:226. https://quantum-journal.org/papers/q-2020-02-06-226/
