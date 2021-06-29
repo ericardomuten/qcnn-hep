@@ -28,5 +28,5 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - Week 3: (on progress).
 
 ## References
-[1]. Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network. https://arxiv.org/abs/2101.06189<br>
-[2]. Pérez-Salinas, A, Cervera-Lierta, A, Gil-Fuster, E, Latorre, J. "Data re-uploading for a universal quantum classifier". Quantum 2020; 4:226. https://quantum-journal.org/papers/q-2020-02-06-226/
+[1] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
+[2] [Pérez-Salinas, A, Cervera-Lierta, A, Gil-Fuster, E, Latorre, J. "Data re-uploading for a universal quantum classifier". Quantum 2020; 4:226.](https://quantum-journal.org/papers/q-2020-02-06-226/)
