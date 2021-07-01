@@ -25,7 +25,8 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet model as a baseline.
 - Week 2: Coding the graph-convolution preprocessing[[1](#references)] and Quantum Conv layer with data re-uploading PQC.
-- Week 3: (on progress).
+- Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 18x18 images.
+- Week 4: (on progress).
 
 ## References
 [1] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
