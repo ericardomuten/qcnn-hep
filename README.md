@@ -30,10 +30,10 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 
 ## Research
 ### Results
-| Notebook Version Name  | Notes | AUC Test Score |
-| ------------- | ------------- | ------------- |
-| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | +/- 0.81 |
-| QCNN v1  | 15% test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = standard scaling | +/- 0.73 |
+| Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score |
+| ------------- | ------------- | ------------- | ------------- |
+| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | 295,074 | +/- 0.81 |
+| QCNN v1  | 15% test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = standard scaling | 190 | +/- 0.73 |
 
 ## References
 [1] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
