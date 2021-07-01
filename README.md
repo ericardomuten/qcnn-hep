@@ -23,8 +23,8 @@ One of the challenges in High-Energy Physics (HEP) is events classification, whi
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
 ## Weekly Progress
-- Week 1: Looking and getting used to the dataset, train a classical ResNet model as a baseline.
-- Week 2: Coding the graph-convolution preprocessing[[1](#references)] and Quantum Conv layer with data re-uploading PQC.
+- Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
+- Week 2: Coding the graph-convolution preprocessing[[2](#references)] and Quantum Conv layer with data re-uploading[[3](#references)] PQC.
 - Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 18x18 images.
 - Week 4: (on progress).
 
@@ -36,5 +36,6 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 | QCNN v1  | 15% test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = standard scaling | 190 | +/- 0.73 |
 
 ## References
-[1] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, Shinjae Yoo. Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
-[2] [Pérez-Salinas, A, Cervera-Lierta, A, Gil-Fuster, E, Latorre, J. "Data re-uploading for a universal quantum classifier". Quantum 2020; 4:226.](https://quantum-journal.org/papers/q-2020-02-06-226/)
+[1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)<br>
+[2] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2021). Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
+[3] [Pérez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E., & Latorre, J. (2020). Data re-uploading for a universal quantum classifier. Quantum, 4, 226.](https://quantum-journal.org/papers/q-2020-02-06-226/)
