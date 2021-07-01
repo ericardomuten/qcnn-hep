@@ -32,7 +32,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ### Results
 | Notebook Version Name  | Notes | AUC Test Score |
 | ------------- | ------------- | ------------- |
-| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = subtract mean | +/- 0.81 |
+| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | +/- 0.81 |
 | QCNN v1  | 15% test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = standard scaling | +/- 0.73 |
 
 ## References
