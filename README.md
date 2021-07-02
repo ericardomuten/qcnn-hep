@@ -32,10 +32,10 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ### Results
 | Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score |
 | ------------- | ------------- | ------------- | ------------- |
-| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | 295,074 | +/- 0.80 |
-| QCNN v1  | 15% test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 190 | +/- 0.73 |
-| ResNet v2  | 15% test samples, 200 epochs, 128 batch size, classical preprocessing = Crop to 8x8, MinMax scaling then subtract mean | 295,074 | +/- 0.63 (overfit, train AUC = +/- 0.80) |
-| QCNN v2  | 15% test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | +/- 0.68 |
+| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | 295,074 | +/- 0.80 |
+| QCNN v1  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 190 | +/- 0.73 |
+| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = Crop to 8x8, MinMax scaling then subtract mean | 295,074 | +/- 0.63 (overfit, train AUC = +/- 0.80) |
+| QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | +/- 0.68 |
 
 ## References
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)<br>
