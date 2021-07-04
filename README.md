@@ -26,7 +26,8 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
 - Week 2: Coding the graph-convolution preprocessing[[2](#references)] and Quantum Conv layer with data re-uploading[[3](#references)] PQC.
 - Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 8x8 images.
-- Week 4: (on progress).
+- Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
+- Week 5: (on progress).
 
 ## Research
 ### Results
