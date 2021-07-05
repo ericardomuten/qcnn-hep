@@ -42,6 +42,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 
 #### QCNN v1
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling
+
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 190 | ±0.636 | ±80 |
