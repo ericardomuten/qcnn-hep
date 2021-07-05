@@ -31,6 +31,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 
 ## Research
 ### Results
+#### Early Testing
 | Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | 295,074 | ±0.80 | - |
@@ -38,6 +39,15 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = Crop to 8x8, MinMax scaling then subtract mean | 295,074 | ±0.63 (overfit, train AUC = ±0.80) | - |
 | QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | ±0.68 | - |
 | QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | <ul><li>1 layer = 190</li><li>2 layers = 226</li><li>3 layers = 262</li><li>4 layers = </li>298</ul> | <ul><li>1 layer = ±0.636</li><li>2 layers = ±0.666</li><li>3 layers = ±0.622</li></ul> | <ul><li>1 layer = ±80 </li><li>2 layers = ±165 </li><li>3 layers = ±350 </li></ul> |
+
+#### QCNN v1
+> 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling
+| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
+| ------------- | ------------- | :-------------: | :-------------: | :-------------: |
+| 1 | 1 | 190 | ±0.636 | ±80 |
+| 1 | 2 | 226 | ±0.666 | ±165 |
+| 1 | 3 | 262 | ±0.622 | ±350 |
+| 1 | 4 | 298 | | |
 
 ## Dependencies
 - Python 3.7.10
