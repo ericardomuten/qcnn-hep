@@ -37,7 +37,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 | QCNN v1  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 190 | ±0.73 | - |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = Crop to 8x8, MinMax scaling then subtract mean | 295,074 | ±0.63 (overfit, train AUC = ±0.80) | - |
 | QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | ±0.68 | - |
-| QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 1 layer = 190<br>2 layer = 226 | 1 layer = ±0.636 <br> 2 layer = ±0.666 | 1 layer = ±80 secs <br> 2 layer = ±165 secs |
+| QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 1 layer = 190 <br> 2 layers = 226 <br> 3 layers = 262 | 1 layer = ±0.636 <br> 2 layers = ±0.666 <br> 3 layers = ±0.622 | 1 layer = ±80 secs <br> 2 layers = ±165 secs <br> 3 layers = ±350 secs |
 
 ## Dependencies
 - Python 3.7.10
