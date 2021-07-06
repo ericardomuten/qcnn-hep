@@ -45,8 +45,8 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
-| 1 | 1 | 190 | | ±0.636 | ±80 |
-| 1 | 2 | 226 | | ±0.666 | ±165 |
+| 1 | 1 | 190 | ±0.689 | ±0.636 | ±80 |
+| 1 | 2 | 226 | ±0.716 | ±0.666 | ±165 |
 | 1 | 3 | 262 | ±0.687 | ±0.622 | ±330 |
 | 1 | 4 | 298 | ±0.691 | ±0.607 | ±370 |
 | 2 | 1 | 226 | ±0.687 | ±0.661 | ±200 |
