@@ -52,7 +52,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 | 2 | 1 | 226 | ±0.687 | ±0.661 | ±200 |
 | 2 | 2 | 298 | ±0.710 | ±0.645 | ±420 |
 | 3 | 1 | 262 | | | |
-| 3 | 2 | | | | |
+| 3 | 2 | 370 | | | |
 
 ## Dependencies
 - Python 3.7.10
