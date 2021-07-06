@@ -43,14 +43,14 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 #### QCNN v1
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling
 
-| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
-| ------------- | ------------- | :-------------: | :-------------: | :-------------: |
-| 1 | 1 | 190 | ±0.636 | ±80 |
-| 1 | 2 | 226 | ±0.666 | ±165 |
-| 1 | 3 | 262 | ±0.622 | ±330 |
-| 1 | 4 | 298 | | |
-| 2 | 1 | 226 | | |
-| 2 | 2 | 298 | | |
+| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
+| 1 | 1 | 190 | | ±0.636 | ±80 |
+| 1 | 2 | 226 | | ±0.666 | ±165 |
+| 1 | 3 | 262 | ±0.687 | ±0.622 | ±330 |
+| 1 | 4 | 298 | ±0.691 | ±0.607 | ±370 |
+| 2 | 1 | 226 | ±0.687 | ±0.661 | ±200 |
+| 2 | 2 | 298 | ±0.710 | ±0.645 | ±420 |
 
 ## Dependencies
 - Python 3.7.10
