@@ -29,8 +29,8 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ## Dataset
 
 <p align="middle">
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" width="100" title="A" />
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png" width="100" title="B" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" width="100" title="Photon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png" width="100" title="Electron" /> <br>
   <a>Averages of Photon (left) and Electron (right) image samples from the dataset.</a>
 </p>
 
