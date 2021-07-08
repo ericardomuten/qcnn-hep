@@ -37,7 +37,10 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 </p>
 
 <p align="middle">
+  
 ![photon](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png "Photon") ![electron](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png "Electron")
+Averages of Photon (left) and Electron (right) image samples from the dataset.
+  
 </p>
   
 The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter detector.
