@@ -34,7 +34,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
   <a>Averages of Photon (left) and Electron (right) image samples from the dataset.</a>
 </p>
   
-The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter detector.
+The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter (ECAL) detector.
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
