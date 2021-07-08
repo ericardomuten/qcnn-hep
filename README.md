@@ -27,7 +27,14 @@ One of the challenges in High-Energy Physics (HEP) is events classification, whi
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
 ## Dataset
-The dataset contains images from two types of particles: electrons (1) and photons (0) captured by the Electromagnetic Calorimeter detector.
+
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" width="100" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png" width="100" /> 
+</p>
+
+
+The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter detector.
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
