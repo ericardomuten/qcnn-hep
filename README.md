@@ -31,7 +31,8 @@ The dataset contains images from two types of particles: electrons (1) and photo
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
-- The size of the images are 32x32.<br>
+- The size of the images are 32x32.
+
 The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tree/main/ParticleImagesChallenge).
 
 ## Weekly Progress
