@@ -36,8 +36,10 @@ This project aims to demonstrate quantum machine learning's potential, specifica
   </figure>
 </p>
 
-![photon](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png "title-1") ![electron](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png "title-2")
-
+<p align="middle">
+![photon](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png "Photon") ![electron](https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png "Electron")
+</p>
+  
 The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter detector.
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
