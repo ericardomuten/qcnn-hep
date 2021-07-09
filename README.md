@@ -55,13 +55,13 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 | Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = MinMax scaling then subtract mean | 295,074 | ±0.80 | - |
-| QCNN v1  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 190 | ±0.73 | - |
+| QCNN v1  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling | 190 | ±0.73 | - |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing = Crop to 8x8, MinMax scaling then subtract mean | 295,074 | ±0.63 (overfit, train AUC = ±0.80) | - |
-| QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | ±0.68 | - |
+| QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling | 194 | ±0.68 | - |
 <!-- | QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | <ul><li>1 layer = 190</li><li>2 layers = 226</li><li>3 layers = 262</li><li>4 layers = </li>298</ul> | <ul><li>1 layer = ±0.636</li><li>2 layers = ±0.666</li><li>3 layers = ±0.622</li></ul> | <ul><li>1 layer = ±80 </li><li>2 layers = ±165 </li><li>3 layers = ±350 </li></ul> | -->
 
 #### QCNN v1.1
-> 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling
+> 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
@@ -73,6 +73,13 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 | 2 | 2 | 298 | ±0.710 | ±0.645 | ±420 |
 | 3 | 1 | 262 | | | |
 | 3 | 2 | 370 | | | |
+
+#### Classical CNN
+> 10k samples with 15% for test samples, 200 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
+
+| Num. of filters | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+| [2, 1] | 193 | ±0.723 | ±0.675 | ±0.268 |
 
 ## Dependencies
 - Python 3.7.10
