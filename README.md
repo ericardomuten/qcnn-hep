@@ -49,6 +49,8 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 - Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
 - Week 5: (on progress).
 
+A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
+
 ## Research
 ### Results
 #### Early Testing
