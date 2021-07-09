@@ -60,7 +60,7 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 | QCNN v2  | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | 194 | ±0.68 | - |
 <!-- | QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | <ul><li>1 layer = 190</li><li>2 layers = 226</li><li>3 layers = 262</li><li>4 layers = </li>298</ul> | <ul><li>1 layer = ±0.636</li><li>2 layers = ±0.666</li><li>3 layers = ±0.622</li></ul> | <ul><li>1 layer = ±80 </li><li>2 layers = ±165 </li><li>3 layers = ±350 </li></ul> | -->
 
-#### QCNN v1
+#### QCNN v1.1
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
