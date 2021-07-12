@@ -47,9 +47,10 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 - Week 2: Coding the graph-convolution preprocessing[[2](#references)] and Quantum Conv layer with data re-uploading[[3](#references)] PQC.
 - Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 8x8 images.
 - Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
-- Week 5: (on progress).
+- Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
+- Week 6: (on progress).
 
-A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
+A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
 
 ## Research
 ### Results
@@ -97,3 +98,4 @@ A specific weekly To-Do list is made every week as an [issue](https://github.com
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)<br>
 [2] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2021). Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
 [3] [Pérez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E., & Latorre, J. (2020). Data re-uploading for a universal quantum classifier. Quantum, 4, 226.](https://quantum-journal.org/papers/q-2020-02-06-226/)
+[4] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2020). Quantum Convolutional Neural Networks for High Energy Physics Data Analysis.](https://arxiv.org/abs/2012.12177)
