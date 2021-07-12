@@ -50,9 +50,10 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 - Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
 - Week 6: (on progress).
 
-A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.<br>
-Progress of the *N*-th week contains things that have been done in that week.<br>
-To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
+Notes:
+- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
+- Progress of the *N*-th week contains things that have been done in that week.
+- To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
 
 ## Research
 ### Results
