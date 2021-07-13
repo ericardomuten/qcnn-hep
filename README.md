@@ -82,6 +82,12 @@ Notes:
 | 3 | 1 | 262 | ±0.691 | ±0.655 | ±350 |
 | 3 | 2 | 370 | ±0.707 | ±0.636 | ±670 |
 
+> 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [2, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
+
+| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
+| 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
+
 #### Classical CNN
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
 
