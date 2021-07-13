@@ -100,5 +100,5 @@ Notes:
 ## References
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)<br>
 [2] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2021). Hybrid Quantum-Classical Graph Convolutional Network.](https://arxiv.org/abs/2101.06189)<br>
-[3] [Pérez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E., & Latorre, J. (2020). Data re-uploading for a universal quantum classifier. Quantum, 4, 226.](https://quantum-journal.org/papers/q-2020-02-06-226/)
+[3] [Pérez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E., & Latorre, J. (2020). Data re-uploading for a universal quantum classifier. Quantum, 4, 226.](https://quantum-journal.org/papers/q-2020-02-06-226/)<br>
 [4] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2020). Quantum Convolutional Neural Networks for High Energy Physics Data Analysis.](https://arxiv.org/abs/2012.12177)
