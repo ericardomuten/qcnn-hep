@@ -88,7 +88,7 @@ Notes:
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
 
-#### QCNN v3 (circuit from [[4](#reference)])
+#### QCNN v3 (circuit from [[4](#references)])
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* layers, filter size = [3, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8
 
 | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
