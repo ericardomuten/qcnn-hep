@@ -101,6 +101,7 @@ Notes:
 | Num. of filters | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | [2, 1] | 193 | ±0.723 | ±0.675 | ±0.268 |
+| [4, 1] | 231 | ±0.747 | ±0.717 | ±0.268 |
 
 ## Dependencies
 - Python 3.7.10
