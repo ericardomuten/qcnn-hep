@@ -82,6 +82,8 @@ Notes:
 | 3 | 1 | 262 | ±0.691 | ±0.655 | ±350 |
 | 3 | 2 | 370 | ±0.707 | ±0.636 | ±670 |
 
+![qcnn-v1.1_heatmap](https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/qcnn-v1.1_heatmap.png "Heatmap Representation of the Table Above.")
+
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [2, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
