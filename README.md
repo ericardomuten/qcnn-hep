@@ -84,7 +84,7 @@ Notes:
 
 <p align="middle">
   <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
-  <a>Validation AUC for Varying the Number of Layers and Qubits.</a>
+  <a>Validation AUC for Varying the Number of Layers and Qubits (0.0 = not tested).</a>
 </p>
 
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [2, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
