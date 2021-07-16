@@ -98,7 +98,7 @@ Notes:
 
 | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
-| 2 | 304 | ± | ± | ± |
+| 2 | 304 | ±0.663 | ± | ± |
 
 #### Classical CNN
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, standard scaling
