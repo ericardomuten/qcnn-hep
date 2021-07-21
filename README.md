@@ -48,7 +48,8 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 - Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 8x8 images.
 - Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
 - Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
-- Week 6: (on progress).
+- Week 6: Tested the new quantum convolution ansatz[[4](#references)], try to combine ideas from data re-uploading circuit to the new ansatz, presented a short summary about the project at the MCQST Student Conference.
+- Week 7: (on progress).
 
 Notes:
 - A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
