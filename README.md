@@ -62,7 +62,11 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
-#### MNIST Dataset
+#### MNIST Dataset[[5](#references)]
+
+The dataset contains images of grayscale (8 bit) handwritten digits, has a training set of 60,000 examples, and a test set of 10,000 examples.
+
+It can be obtained from [[5](#references)].
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
@@ -95,6 +99,7 @@ Notes:
 ___
 
 #### QCNN v1.1 (data re-uploading circuit)
+##### Test on ECAL Dataset
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
 
 > optimizer: Adam(learning_rate=lr_schedule)
@@ -121,16 +126,7 @@ ___
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
 
-##### Test on MNIST Dataset[[5](#references)]
-> 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
-
-> optimizer: Adam(learning_rate=lr_schedule)
-
-| Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
-| :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | 40s |
-
-##### Test on Dataset of Simulated Particle Jets Measured in LArTPC Detector[[4](#references)]
+##### Test on LArTPC Dataset
 > 2 classes, 160 training samples (80 per class), 40 testing samples (20 per class), 200 epochs, 16 batch size, *varying* qubits, *varying* layers, filter size = [3, 2], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: log scaling -> MinMax scaling
 
 > optimizer: RMSProp(learning_rate=0.01, rho=0.99, epsilon=1e-08)
@@ -155,6 +151,15 @@ ___
 | e- vs μ+ | 1 | 1 | 130 | 1.0 | 0.977 | 1.0 | 0.925 | 6s |
 | p+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.980 | 1.0 | 0.950 | 6s |
 | π+ vs μ+ | 1 | 1 | 130 |  |  |  |  | 6s |
+
+##### Test on MNIST Dataset
+> 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
+
+> optimizer: Adam(learning_rate=lr_schedule)
+
+| Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
+| :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | 40s |
 
 ___
 
