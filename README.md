@@ -70,6 +70,8 @@ Notes:
 | Classical Fully-connected NN | Whole samples with 15% for test samples, 10 epochs, 128 batch size, num. of nodes = [3, 2], activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling -> flatten to 64, optimizer: Adam(learning_rate=lr_schedule) | 203 | ±0.691 | 10 |
 <!-- | QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | <ul><li>1 layer = 190</li><li>2 layers = 226</li><li>3 layers = 262</li><li>4 layers = </li>298</ul> | <ul><li>1 layer = ±0.636</li><li>2 layers = ±0.666</li><li>3 layers = ±0.622</li></ul> | <ul><li>1 layer = ±80 </li><li>2 layers = ±165 </li><li>3 layers = ±350 </li></ul> | -->
 
+___
+
 #### QCNN v1.1 (data re-uploading circuit)
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
 
@@ -111,10 +113,22 @@ Notes:
 
 > optimizer: RMSProp(learning_rate=0.01, rho=0.99, epsilon=1e-08)
 
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
+  <a>Sample Images of e- vs μ+.</a>
+</p>
+
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
+  <a>Sample Images of p+ vs μ+.</a>
+</p>
+
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | e- vs μ+ | 1 | 1 | 130 | 1.0 | 0.977 | 1.0 | 0.925 | 6s |
+| p+ vs μ+ | 1 | 1 | 130 | | | | | 6s |
 
+___
 
 #### QCNN v3 (circuit from [[4](#references)])
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* layers, filter size = [3, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> convert all pixels' value with arctan function
@@ -127,6 +141,8 @@ Notes:
 | 2 | 304 | ±0.663 | ±0.644 | ±570 |
 | 3 | 343 | ±0.647 | ±0.630 | ±780 |
 | 4 | 382 | ±0.653 | ±0.635 | ±950 |
+
+___
 
 #### Classical CNN
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
