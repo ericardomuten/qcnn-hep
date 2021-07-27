@@ -94,6 +94,13 @@ Notes:
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
 
+##### Test on MNIST Dataset
+> 2 classes (0 vs 1), 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8, pixels range [0, 1] (divide all pixels by 255)
+
+| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
+| 1 | 1 | 350 | 0.999 | 0.999 | 40s |
+
 #### QCNN v3 (circuit from [[4](#references)])
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* layers, filter size = [3, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing = Crop to 8x8
 
