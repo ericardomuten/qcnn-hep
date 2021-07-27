@@ -49,7 +49,8 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 - Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
 - Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
 - Week 6: Tested the new quantum convolution ansatz[[4](#references)], try to combine ideas from data re-uploading circuit to the new ansatz, presented a short summary about the project at the MCQST Student Conference.
-- Week 7: (on progress).
+- Week 7: Tested the QCNN v1.1 on MNIST[[5](#references)] and LArTPC[[4](#references)] dataset.
+- Week 8: (on progress).
 
 Notes:
 - A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
@@ -96,7 +97,7 @@ Notes:
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
 
-##### Test on MNIST Dataset
+##### Test on MNIST Dataset[[5](#references)]
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
 
 > optimizer: Adam(learning_rate=lr_schedule)
