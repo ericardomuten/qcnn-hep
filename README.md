@@ -136,12 +136,12 @@ ___
 > optimizer: RMSProp(learning_rate=0.01, rho=0.99, epsilon=1e-08)
 
 <p align="middle">
-  <img height="500px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
   <a>Sample Images of e- vs μ+.</a>
 </p>
 
 <p align="middle">
-  <img height="500px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
   <a>Sample Images of p+ vs μ+.</a>
 </p>
 
