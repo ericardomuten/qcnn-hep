@@ -145,10 +145,16 @@ ___
   <a>Sample Images of p+ vs μ+.</a>
 </p>
 
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_pion-plus.png" title="π+ vs μ+" /> <br>
+  <a>Sample Images of π+ vs μ+.</a>
+</p>
+
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | e- vs μ+ | 1 | 1 | 130 | 1.0 | 0.977 | 1.0 | 0.925 | 6s |
 | p+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.980 | 1.0 | 0.950 | 6s |
+| π+ vs μ+ | 1 | 1 | 130 |  |  |  |  | 6s |
 
 ___
 
