@@ -148,9 +148,9 @@ ___
 
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| e- vs μ+ | 1 | 1 | 130 | 1.0 | 0.977 | 1.0 | 0.925 | 6s |
-| p+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.980 | 1.0 | 0.950 | 6s |
-| π+ vs μ+ | 1 | 1 | 130 |  |  |  |  | 6s |
+| e- vs μ+ | 1 | 1 | 130 | 1.0 | 0.977 | 1.0 | 0.925 | ±6 |
+| p+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.980 | 1.0 | 0.950 | ±6 |
+| π+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.928 | 1.0 | 0.850 | ±6 |
 
 ##### Test on MNIST Dataset
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
@@ -159,7 +159,7 @@ ___
 
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | 40s |
+| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | ±40 |
 
 ___
 
