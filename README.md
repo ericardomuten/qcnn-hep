@@ -88,12 +88,12 @@ Notes:
 #### Early Testing
 | Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
-| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | ±0.80 | - |
-| QCNN v1 (data re-uploading circuit) | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 190 | ±0.730 | (about 1.5 hours/epoch) |
-| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: crop to 8x8 -> MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | ±0.63 (overfit, train AUC = ±0.80) | - |
-| QCNN v2 (data re-uploading circuit) | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 194 | ±0.68 | - |
-| Classical CNN | Whole samples with 15% for test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], num. of filters = [2, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 193 | ±0.738 | 13 |
-| Classical Fully-connected NN | Whole samples with 15% for test samples, 10 epochs, 128 batch size, num. of nodes = [3, 2], activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling -> flatten to 64, optimizer: Adam(learning_rate=lr_schedule) | 203 | ±0.691 | 10 |
+| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | 0.80 | - |
+| QCNN v1 (data re-uploading circuit) | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 190 | 0.730 | (about 1.5 hours/epoch) |
+| ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: crop to 8x8 -> MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | 0.63 (overfit, train AUC = 0.80) | - |
+| QCNN v2 (data re-uploading circuit) | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 2 qubits, 2 layers, filter size = [2, 2], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 194 | 0.68 | - |
+| Classical CNN | Whole samples with 15% for test samples, 10 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], num. of filters = [2, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 193 | 0.738 | 13 |
+| Classical Fully-connected NN | Whole samples with 15% for test samples, 10 epochs, 128 batch size, num. of nodes = [3, 2], activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling -> flatten to 64, optimizer: Adam(learning_rate=lr_schedule) | 203 | 0.691 | 10 |
 <!-- | QCNN v1  | 10k samples with 15% for test samples, 200 epochs, 128 batch size, 1 qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2], classical preprocessing = Crop to 8x8, standard scaling | <ul><li>1 layer = 190</li><li>2 layers = 226</li><li>3 layers = 262</li><li>4 layers = </li>298</ul> | <ul><li>1 layer = ±0.636</li><li>2 layers = ±0.666</li><li>3 layers = ±0.622</li></ul> | <ul><li>1 layer = ±80 </li><li>2 layers = ±165 </li><li>3 layers = ±350 </li></ul> | -->
 
 ___
@@ -106,14 +106,14 @@ ___
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| 1 | 1 | 190 | ±0.689 | ±0.636 | ±80 |
-| 1 | 2 | 226 | ±0.716 | ±0.666 | ±165 |
-| 1 | 3 | 262 | ±0.687 | ±0.622 | ±330 |
-| 1 | 4 | 298 | ±0.691 | ±0.607 | ±370 |
-| 2 | 1 | 226 | ±0.687 | ±0.661 | ±200 |
-| 2 | 2 | 298 | ±0.710 | ±0.645 | ±420 |
-| 3 | 1 | 262 | ±0.691 | ±0.655 | ±350 |
-| 3 | 2 | 370 | ±0.707 | ±0.636 | ±670 |
+| 1 | 1 | 190 | 0.689 | 0.636 | ±80 |
+| 1 | 2 | 226 | 0.716 | 0.666 | ±165 |
+| 1 | 3 | 262 | 0.687 | 0.622 | ±330 |
+| 1 | 4 | 298 | 0.691 | 0.607 | ±370 |
+| 2 | 1 | 226 | 0.687 | 0.661 | ±200 |
+| 2 | 2 | 298 | 0.710 | 0.645 | ±420 |
+| 3 | 1 | 262 | 0.691 | 0.655 | ±350 |
+| 3 | 2 | 370 | 0.707 | 0.636 | ±670 |
 
 <p align="middle">
   <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
@@ -124,7 +124,7 @@ ___
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
-| 1 | 1 | 338 | ±0.650 | ±0.623 | ±120 |
+| 1 | 1 | 338 | 0.650 | 0.623 | ±120 |
 
 ##### Test on LArTPC Dataset
 > 2 classes, 160 training samples (80 per class), 40 testing samples (20 per class), 200 epochs, 16 batch size, *varying* qubits, *varying* layers, filter size = [3, 2], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: log scaling -> MinMax scaling
@@ -170,10 +170,10 @@ ___
 
 | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| 1 | 265 | ±0.613 | ±0.586 | ±300 |
-| 2 | 304 | ±0.663 | ±0.644 | ±570 |
-| 3 | 343 | ±0.647 | ±0.630 | ±780 |
-| 4 | 382 | ±0.653 | ±0.635 | ±950 |
+| 1 | 265 | 0.613 | 0.586 | ±300 |
+| 2 | 304 | 0.663 | 0.644 | ±570 |
+| 3 | 343 | 0.647 | 0.630 | ±780 |
+| 4 | 382 | 0.653 | 0.635 | ±950 |
 
 ___
 
@@ -184,12 +184,12 @@ ___
 
 | Num. of filters | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| [2, 1] | 193 | ±0.723 | ±0.675 | ±0.268 |
-| [4, 1] | 231 | ±0.735 | ±0.693 | ±0.268 |
-| [6, 1] | 269 | ±0.745 | ±0.696 | ±0.268 |
-| [8, 1] | 307 | ±0.746 | ±0.700 | ±0.268 |
-| [4, 2] | 396 | ±0.764 | ±0.699 | ±0.268 |
-| [4, 3] | 561 | ±0.784 | ±0.687 | ±0.268 |
+| [2, 1] | 193 | 0.723 | 0.675 | ±0.268 |
+| [4, 1] | 231 | 0.735 | 0.693 | ±0.268 |
+| [6, 1] | 269 | 0.745 | 0.696 | ±0.268 |
+| [8, 1] | 307 | 0.746 | 0.700 | ±0.268 |
+| [4, 2] | 396 | 0.764 | 0.699 | ±0.268 |
+| [4, 3] | 561 | 0.784 | 0.687 | ±0.268 |
 
 ## Dependencies
 - Python 3.7.10
