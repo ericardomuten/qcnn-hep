@@ -26,7 +26,9 @@ One of the challenges in High-Energy Physics (HEP) is events classification, whi
 
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
-## Main Dataset
+## Dataset
+
+### Primary Dataset: Electromagnetic Calorimeter (ECAL) Dataset
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" title="Photon" />
@@ -34,13 +36,33 @@ This project aims to demonstrate quantum machine learning's potential, specifica
   <a>Averages of Photon (left) and Electron (right) image samples from the dataset.</a>
 </p>
   
-The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the Electromagnetic Calorimeter (ECAL) detector.
+The dataset contains images from two types of particles: photons (0) and electrons (1) captured by the ECAL detector.
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
 - The size of the images are 32x32.
 
 The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tree/main/ParticleImagesChallenge).
+
+### Secondary Dataset
+#### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
+
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
+  <a>An image sample for each class from the dataset.</a>
+</p>
+
+The dataset contains images of simulated particle activities (μ+, e−, p+, π+, π0, γ) in a LArTPC detector. This dataset is prepared by the authors for study in [[4](#references)].
+
+- The images have a resolution of 480 x 600 pixels, where each pixel in the x-axis represents a single wire and each pixel in the y-axis represents a sampling time tick.
+- Colors in the images represent the sizes of the ionization energy loss along the particle trajectories when measured by LArTPC’s wire planes.
+- In total, there are 100 samples for each class.
+- Each particle’s momentum is set such that the mean range of the particle is about 2 meters, so the classification is not sensitive to the image size.
+- In this study, the images are scaled to 30x30, prepared by the original authors of the dataset.
+
+The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
+
+#### MNIST Dataset
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
