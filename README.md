@@ -164,6 +164,19 @@ ___
 | π+ vs μ+ | 2 | 2 | 220 | 1.0 | 0.977 | 1.0 | 0.950 | ±24 |
 | π+ vs μ+ | 2 | 3 | 280 |  |  |  |  | ± |
 
+\-----
+
+> Results reported in [[4](#references)] (as a comparison). The model developed in this project produced similar results (with the QCNN) with less number of qubits and trainable parameters.
+
+| Model | Classes | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy |
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+| QCNN | e- vs μ+ | 9 | 472 | 1.0 | 0.925 |
+| QCNN | p+ vs μ+ | 9 | 472 | 1.0 | 0.975 |
+| QCNN | π+ vs μ+ | 9 | 472 | 0.9688 | 0.975 |
+| CNN | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 |
+| CNN | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 |
+| CNN | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 |
+
 ##### Test on MNIST Dataset
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
 
