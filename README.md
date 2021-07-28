@@ -175,6 +175,7 @@ ___
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | 0 vs 1 | 1 | 1 | 110 |  |  |  |  |  |
+
 ___
 
 #### QCNN v3 (circuit from [[4](#references)])
