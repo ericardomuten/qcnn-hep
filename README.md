@@ -160,7 +160,8 @@ ___
 | π+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.928 | 1.0 | 0.850 | ±6 |
 | π+ vs μ+ | 1 | 2 | 160 | 1.0 | 0.921 | 1.0 | 0.875 | ±11 |
 | π+ vs μ+ | 1 | 3 | 190 | 1.0 | 0.863 | 1.0 | 0.825 | ±18 |
-| π+ vs μ+ | 2 | 1 | 160 |  |  |  |  | ± |
+| π+ vs μ+ | 2 | 1 | 160 | 1.0 | 0.890 | 1.0 | 0.925 | ±12 |
+| π+ vs μ+ | 2 | 2 |  |  |  |  |  | ± |
 
 ##### Test on MNIST Dataset
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
@@ -173,14 +174,14 @@ ___
 
 \-----
 
-> 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: pixels range [0, 1] (divide all pixels by 255)
+> 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 200 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: pixels range [0, 1] (divide all pixels by 255)
 
 > optimizer: Adam(learning_rate=0.001)
 
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | 0 vs 1 | 1 | 1 | 110 | 0.998 | 0.995 | 0.991 | 0.974 | ±57 |
-| 3 vs 6 | 1 | 1 | 110 |  |  |  |  | ± |
+| 3 vs 6 | 1 | 1 | 110 | 0.999 | 0.998 | 0.998 | 0.985 | ±55 |
 
 ___
 
