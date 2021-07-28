@@ -49,7 +49,7 @@ The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tre
 
 <p align="middle">
   <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
-  <a>An image sample for each class from the dataset.</a>
+  <a>An image sample for each class from LArTPC dataset.</a>
 </p>
 
 The dataset contains images of simulated particle activities (μ+, e−, p+, π+, π0, γ) in a LArTPC detector. This dataset is prepared by the authors for study in [[4](#references)].
@@ -63,6 +63,11 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
 #### MNIST Dataset[[5](#references)]
+
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
+  <a>An image sample for each class from MNIST dataset.</a>
+</p>
 
 The dataset contains images of grayscale (8 bit) handwritten digits, has a training set of 60,000 examples, and a test set of 10,000 examples.
 
