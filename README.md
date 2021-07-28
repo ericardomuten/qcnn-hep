@@ -65,7 +65,7 @@ The dataset can be obtained from the original authors of [[4](#references)] upon
 #### MNIST Dataset[[5](#references)]
 
 <p align="middle">
-  <img height="100 px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
+  <img height="300 px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
   <a>An image sample for each class from MNIST dataset.</a>
 </p>
 
