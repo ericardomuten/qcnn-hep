@@ -86,7 +86,7 @@ Notes:
 ## Research
 ### Results
 #### Early Testing
-| Notebook Version Name  | Notes | Num. Trainable Params | AUC Test Score | Runtime (secs per epoch) |
+| Notebook Version Name  | Notes | Num. Trainable Params | Test AUC | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | 0.80 | - |
 | QCNN v1 (data re-uploading circuit) | Whole samples with 15% for test samples, 10 epochs, 128 batch size, 1 qubits, 1 layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling, optimizer: Adam(learning_rate=lr_schedule) | 190 | 0.730 | (about 1.5 hours/epoch) |
@@ -104,7 +104,7 @@ ___
 
 > optimizer: Adam(learning_rate=lr_schedule)
 
-| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 190 | 0.689 | 0.636 | ±80 |
 | 1 | 2 | 226 | 0.716 | 0.666 | ±165 |
@@ -122,7 +122,7 @@ ___
 
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [2, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
 
-| Num. Qubits  | Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Runtime (secs per epoch) |
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | 0.650 | 0.623 | ±120 |
 
@@ -169,7 +169,7 @@ ___
 
 > optimizer: Adam(learning_rate=lr_schedule)
 
-| Num. Layers | Num. Trainable Params | AUC Train | AUC Test | Runtime (secs per epoch) |
+| Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Runtime (secs per epoch) |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 265 | 0.613 | 0.586 | ±300 |
 | 2 | 304 | 0.663 | 0.644 | ±570 |
@@ -192,13 +192,16 @@ ___
 | [4, 2] | 396 | 0.764 | 0.699 | ±0.268 |
 | [4, 3] | 561 | 0.784 | 0.687 | ±0.268 |
 
-## Dependencies
+## Package Dependencies
 - Python 3.7.10
 - TensorFlow 2.4.1
 - TensorFlow Quantum 0.5.1
 - Cirq 0.11.0
 - Sympy 1.5
 - Numpy 1.19.5
+
+## Hardware and Platform
+The whole project is run on `Google Colab` with `GPU` vary between `V100, P100, or T4`. The runtime listed in the [Research](#research) section might not be too accurate as the GPU used vary between runs. The main benchmarking metric is the `Test AUC`.
 
 ## References
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)
