@@ -166,8 +166,10 @@ ___
 
 | Classes | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | :-------------: | ------------- | ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | ±40 |<br>
----<br>
+| 0 vs 1 | 1 | 1 | 350 | 0.999 | 0.999 | 0.99 | 0.99 | ±40 |
+
+\-----
+
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: pixels range [0, 1] (divide all pixels by 255)
 
 > optimizer: Adam(learning_rate=0.001)
