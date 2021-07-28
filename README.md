@@ -161,7 +161,8 @@ ___
 | π+ vs μ+ | 1 | 2 | 160 | 1.0 | 0.921 | 1.0 | 0.875 | ±11 |
 | π+ vs μ+ | 1 | 3 | 190 | 1.0 | 0.863 | 1.0 | 0.825 | ±18 |
 | π+ vs μ+ | 2 | 1 | 160 | 1.0 | 0.890 | 1.0 | 0.925 | ±12 |
-| π+ vs μ+ | 2 | 2 | 220 |  |  |  |  | ± |
+| π+ vs μ+ | 2 | 2 | 220 | 1.0 | 0.977 | 1.0 | 0.950 | ±24 |
+| π+ vs μ+ | 2 | 3 | 280 |  |  |  |  | ± |
 
 ##### Test on MNIST Dataset
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
