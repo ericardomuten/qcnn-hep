@@ -91,6 +91,8 @@ Notes:
 ## Research
 ### Results
 #### Early Testing
+##### Test on ECAL Dataset
+
 | Notebook Version Name  | Notes | Num. Trainable Params | Test AUC | Runtime (secs per epoch) |
 | ------------- | ------------- | :-------------: | :-------------: | :-------------: |
 | ResNet v2  | Whole samples with 15% for test samples, 200 epochs, 128 batch size, classical preprocessing: MinMax scaling -> subtract mean, optimizer: Adam(learning_rate=lr_schedule) | 295,074 | 0.80 | - |
@@ -103,7 +105,7 @@ Notes:
 
 ___
 
-#### QCNN v1.1 (data re-uploading circuit)
+#### QCNN v1.1 (data re-uploading circuit[[3](#references)])
 ##### Test on ECAL Dataset
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
 
@@ -181,6 +183,7 @@ ___
 ___
 
 #### QCNN v3 (circuit from [[4](#references)])
+##### Test on ECAL Dataset
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, *varying* layers, filter size = [3, 2], stride = [1, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> convert all pixels' value with arctan function
 
 > optimizer: Adam(learning_rate=lr_schedule)
@@ -195,6 +198,7 @@ ___
 ___
 
 #### Classical CNN
+##### Test on ECAL Dataset
 > 10k samples with 15% for test samples, 200 epochs, 128 batch size, filter size = [3, 3], stride = [1, 1], conv activation = [relu, relu], use_bias = [True, True], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 8x8 -> standard scaling
 
 > optimizer: Adam(learning_rate=lr_schedule)
