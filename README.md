@@ -236,6 +236,23 @@ ___
 | [4, 2] | 396 | 0.764 | 0.699 | ±0.268 |
 | [4, 3] | 561 | 0.784 | 0.687 | ±0.268 |
 
+___
+
+#### General Notes
+1. **lr_schedule**
+
+    ```
+    lr = 1e-3
+        if epoch > 180:
+            lr *= 0.5e-3
+        elif epoch > 160:
+            lr *= 1e-3
+        elif epoch > 120:
+            lr *= 1e-2
+        elif epoch > 80:
+            lr *= 1e-1
+    ```
+
 ## Package Dependencies
 - Python 3.7.10
 - TensorFlow 2.4.1
