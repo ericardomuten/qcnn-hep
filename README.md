@@ -155,6 +155,18 @@ ___
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | 0.650 | 0.623 | ±120 |
 
+##### Test on Quark-Gluon Dataset
+> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), ... epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: log scaling -> MinMax scaling
+
+> optimizer: Adam(learning_rate=lr_schedule)
+
+| Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
+| ------------ | ----------- | :-------------------: | :-------: | :------: | :------------: | :-----------: | :----------------------: |
+| 1 | 1 | 2374 | 0.712 | 0.531 | 0.659 | 0.567 | 128 |
+| 1 | 2 | 2410 |  |  |  |  |  |
+| 1 | 3 | 2446 |  |  |  |  |  |
+| 2 | 1 | 2410 |  |  |  |  |  |
+
 ##### Test on LArTPC Dataset
 > 2 classes, 160 training samples (80 per class), 40 testing samples (20 per class), 200 epochs, 16 batch size, *varying* qubits, *varying* layers, filter size = [3, 2], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: log scaling -> MinMax scaling
 
