@@ -8,13 +8,22 @@
     
 </div>
 
-## Table of Contents
-
+## Table of (Main) Contents
+- [Introduction](#introduction-)
+  - [Abstract](#abstract-)
+- [How to Use](#how-to-use-)
+- [Project's Datasets]()
+- [Research](#research-)
+  - [Results](#results-)
+- [References](#references-)
 
 ## Introduction
 
 ### Organization
 [Machine Learning for Science (ML4Sci)](https://ml4sci.org/)
+
+### Student
+[Eraraya Ricardo Muten](https://eraraya-ricardo.me/)
 
 ### Mentors
 [Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), [Dr. Emanuele Usai](https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
@@ -29,6 +38,14 @@ One of the challenges in High-Energy Physics (HEP) is events classification, whi
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
 ## How to Use
+
+### Package Dependencies
+- Python 3.7.10
+- TensorFlow 2.4.1
+- TensorFlow Quantum 0.5.1
+- Cirq 0.11.0
+- Sympy 1.5
+- Numpy 1.19.5
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
@@ -263,14 +280,6 @@ ___
         elif epoch > 80:
             lr *= 1e-1
     ```
-
-### Package Dependencies
-- Python 3.7.10
-- TensorFlow 2.4.1
-- TensorFlow Quantum 0.5.1
-- Cirq 0.11.0
-- Sympy 1.5
-- Numpy 1.19.5
 
 ## References
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)
