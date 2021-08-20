@@ -8,25 +8,44 @@
     
 </div>
 
-## Organization
+## Table of Contents
 
+
+## Introduction
+
+### Organization
 [Machine Learning for Science (ML4Sci)](https://ml4sci.org/)
 
-## Mentors
-
+### Mentors
 [Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), [Dr. Emanuele Usai](https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
 
-## Project Proposal
+### Project Proposal
 - [Project idea from the organization](https://ml4sci.org/gsoc/2021/proposal_QMLHEP2.html).
 - [Proposal from the student](https://github.com/eraraya-ricardo/qml-hep-gsoc-2021/blob/main/Eraraya_Ricardo_Muten_GSoC_2021_Proposal_QCNN.pdf).
 
-## Abstract
-
+### Abstract
 One of the challenges in High-Energy Physics (HEP) is events classification, which is to predict whether an image of particle jets belongs to events being sought after or just background signals. Classical Convolutional Neural Network (CNN) has been proven a powerful algorithm in image classification, including jets image. As quantum computers promise many advantages over classical computing, comes a question on whether quantum machine learning (QML) can give any improvement in solving the problem.
 
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
-## Dataset
+## How to Use
+
+## Weekly Progress
+- Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
+- Week 2: Coding the graph-convolution preprocessing[[2](#references)] and Quantum Conv layer with data re-uploading[[3](#references)] PQC.
+- Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 8x8 images.
+- Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
+- Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
+- Week 6: Tested the new quantum convolution ansatz[[4](#references)], try to combine ideas from data re-uploading circuit to the new ansatz, presented a short summary about the project at the MCQST Student Conference.
+- Week 7: Tested the QCNN v1.1 on MNIST[[5](#references)] and LArTPC[[4](#references)] dataset.
+- Week 8: (on progress).
+
+Notes:
+- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
+- Progress of the *N*-th week contains things that have been done in that week.
+- To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
+
+## Project's Datasets
 
 ### Primary Dataset: Electromagnetic Calorimeter (ECAL) Dataset
 
@@ -73,22 +92,11 @@ The dataset contains images of grayscale (8 bit) handwritten digits, has a train
 
 It can be obtained from [[5](#references)].
 
-## Weekly Progress
-- Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
-- Week 2: Coding the graph-convolution preprocessing[[2](#references)] and Quantum Conv layer with data re-uploading[[3](#references)] PQC.
-- Week 3: Testing the first iteration of the QCNN model, coding the parallelized convolution, testing ResNet with 8x8 images.
-- Week 4: Tested the Kaggle platform, tested the parallelized convolution, trained QCNN with varying hyperparameters.
-- Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v.1 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
-- Week 6: Tested the new quantum convolution ansatz[[4](#references)], try to combine ideas from data re-uploading circuit to the new ansatz, presented a short summary about the project at the MCQST Student Conference.
-- Week 7: Tested the QCNN v1.1 on MNIST[[5](#references)] and LArTPC[[4](#references)] dataset.
-- Week 8: (on progress).
-
-Notes:
-- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
-- Progress of the *N*-th week contains things that have been done in that week.
-- To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
-
 ## Research
+
+### Hardware and Platform
+The whole project is run on `Google Colab` with `GPU` vary between `V100, P100, or T4`. The runtime listed in the [Research](#research) section might not be too accurate as the GPU used vary between runs. The main benchmarking metric is the `Test AUC`.
+
 ### Results
 #### Early Testing
 ##### Test on ECAL Dataset
@@ -159,7 +167,7 @@ ___
 | e- vs μ+ | 1 | 2 | 160 | 1.0 | 0.971 | 1.0 | 0.925 | ±14 |
 | e- vs μ+ | 2 | 2 | 220 | 1.0 | 0.996 | 1.0 | 0.950 | ±27 |
 | p+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.980 | 1.0 | 0.950 | ±6 |
-| p+ vs μ+ | 1 | 2 | 160 | 1.0 |  | 1.0 |  | ± |
+<!-- | p+ vs μ+ | 1 | 2 | 160 | 1.0 |  | 1.0 |  | ± | -->
 | p+ vs μ+ | 2 | 2 | 220 | 1.0 | 0.969 | 1.0 | 0.925 | ±25 |
 | π+ vs μ+ | 1 | 1 | 130 | 1.0 | 0.928 | 1.0 | 0.850 | ±6 |
 | π+ vs μ+ | 1 | 2 | 160 | 1.0 | 0.921 | 1.0 | 0.875 | ±11 |
@@ -256,16 +264,13 @@ ___
             lr *= 1e-1
     ```
 
-## Package Dependencies
+### Package Dependencies
 - Python 3.7.10
 - TensorFlow 2.4.1
 - TensorFlow Quantum 0.5.1
 - Cirq 0.11.0
 - Sympy 1.5
 - Numpy 1.19.5
-
-## Hardware and Platform
-The whole project is run on `Google Colab` with `GPU` vary between `V100, P100, or T4`. The runtime listed in the [Research](#research) section might not be too accurate as the GPU used vary between runs. The main benchmarking metric is the `Test AUC`.
 
 ## References
 [1] [He, J. (2016). Identity Mappings in Deep Residual Networks. In Computer Vision – ECCV 2016 (pp. 630–645). Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_38)
