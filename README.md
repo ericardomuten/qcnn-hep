@@ -48,12 +48,12 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ## How to Use
 
 ### Package Description
-This package is a TensorFlow Quantum implementation of quantum convolution and classifier with Data Re-uploading ansatz. Both are wrapped as Keras layers that can easily be integrated into other Keras layers (classical and/or quantum), acting as building blocks for Quantum Convolutional Neural Networks (both hybrid and fully quantum). The model can be trained using Keras API.
+This package is a [TensorFlow Quantum](https://www.tensorflow.org/quantum) implementation of quantum convolution and classifier with Data Re-uploading[[3](#references)] ansatz. Both are wrapped as [Keras](https://keras.io/) layers that can easily be integrated into other Keras layers (classical and/or quantum), acting as building blocks for Quantum Convolutional Neural Networks (both hybrid and fully quantum). The model can be trained using Keras API.
 
 ### Package Dependencies
 - Python 3.7
 - Cirq 0.11.0
-- TensorFlow 2.4.1
+- <a href="https://www.tensorflow.org/" target="_blank"><img alt="TensorFlow" height="23px" src="https://img.shields.io/badge/TensorFlow%202.4.1-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" /></a>
 - TensorFlow Quantum 0.5.1
 
 ### Installation
