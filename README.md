@@ -19,6 +19,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - [Introduction](#introduction)
   - [Abstract](#abstract)
 - [How to Use](#how-to-use)
+  - [Package Description](#package-description)
   - [Installation](#installation)
   - [Docs and Tutorial](#docs-and-tutorial)
 - [Project's Datasets](#projects-datasets)
@@ -47,7 +48,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 ## How to Use
 
 ### Package Description
-
+This package is a TensorFlow Quantum implementation of quantum convolution and classifier with Data Re-uploading ansatz. Both are wrapped as Keras layers that can easily be integrated into other Keras layers (classical and/or quantum), acting as building blocks for Quantum Convolutional Neural Networks (both hybrid and fully quantum). The model can be trained using Keras API.
 
 ### Package Dependencies
 - Python 3.7
@@ -321,3 +322,7 @@ ___
 [4] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2020). Quantum Convolutional Neural Networks for High Energy Physics Data Analysis.](https://arxiv.org/abs/2012.12177)
 
 [5] [LeCun Y, Cortes C. MNIST handwritten digit database 2010.](http://yann.lecun.com/exdb/mnist/)
+
+<!---
+Semantic Versioning 2.0.0: https://semver.org/
+--->
