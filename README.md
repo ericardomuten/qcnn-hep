@@ -32,8 +32,8 @@ A Google Summer of Code 2021 Project Repository. This project aims to demonstrat
 - **Mentors**
   - [Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), [Dr. Emanuele Usai](https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
 - **Project Details**
-  - [Project Idea](https://ml4sci.org/gsoc/2021/proposal_QMLHEP2.html).
-  - [Accepted Proposal](https://github.com/eraraya-ricardo/qml-hep-gsoc-2021/blob/main/Eraraya_Ricardo_Muten_GSoC_2021_Proposal_QCNN.pdf).
+  - [Project Idea](https://ml4sci.org/gsoc/2021/proposal_QMLHEP2.html)
+  - [Accepted Proposal](https://github.com/eraraya-ricardo/qml-hep-gsoc-2021/blob/main/Eraraya_Ricardo_Muten_GSoC_2021_Proposal_QCNN.pdf)
   - [Official Project Page](https://summerofcode.withgoogle.com/projects/#5612096894533632)
 
 ### Abstract
