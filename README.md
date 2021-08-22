@@ -50,6 +50,12 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - TensorFlow Quantum 0.5.1
 
 ### Installation
+```shell
+git clone https://github.com/eraraya-ricardo/qcnn-hep.git
+cd qcnn-hep
+python -m pip install -r requirements.txt
+python setup.py
+```
 
 ### Docs and Tutorial
 
