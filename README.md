@@ -9,7 +9,7 @@
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v2/open-source.svg)](https://github.com/firstcontributions/open-source-badges)
 
 A Google Summer of Code 2021 Project Repository.<br>
-This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data.<br>The <b>code used in the research is wrapped as an open-source package</b> to ease future research in this field by the community.<br><b>Check the [How to Use](#how-to-use) section to learn more about it.</b>
+This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data.<br>The <b>code used in the research is wrapped as an open-source package</b> to ease future research in this field.<br><b>Check the [How to Use](#how-to-use) section to learn more about it.</b>
 
   <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/gsoc%40ml4sci.jpeg" /></a>
     
