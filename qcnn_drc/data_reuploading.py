@@ -28,7 +28,7 @@ from qcnn_drc.circuit_constructor import generate_circuit
 
 class ReUploadingPQC(tf.keras.layers.Layer):
     def __init__(self, n_qubits, n_layers, input_size, use_entanglement=True, use_terminal_entanglement=True,
-                 name="re-uploading_PQC"):
+                    observables=None, name="re-uploading_PQC"):
         super(ReUploadingPQC, self).__init__(name=name)
         self.n_layers = n_layers
         self.n_qubits = n_qubits
@@ -38,7 +38,10 @@ class ReUploadingPQC(tf.keras.layers.Layer):
         self.main_name = name
 
         self.qubits = cirq.GridQubit.rect(1, n_qubits)
-        self.observables = [cirq.Z(self.qubits[-1])]  # Measure only the last qubit
+        if observables is None:
+            self.observables = [cirq.Z(self.qubits[-1])]  # Measure only the last qubit
+        else:
+            self.observables = observables  # Custom observables
 
         # Generate the data re-uploading circuit
         self.circuit, theta_symbols = generate_circuit(self.qubits, self.n_layers, self.input_size,
