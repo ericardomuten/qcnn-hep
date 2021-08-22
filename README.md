@@ -8,7 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v2/open-source.svg)](https://github.com/firstcontributions/open-source-badges)
 
-A Google Summer of Code 2021 Project Repository. This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data.
+A Google Summer of Code 2021 Project Repository.<br>
+This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data. The code used in the research is wrapped as an open-source package to ease future research in this field by the community.
 
   <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/gsoc%40ml4sci.jpeg" /></a>
     
@@ -18,6 +19,8 @@ A Google Summer of Code 2021 Project Repository. This project aims to demonstrat
 - [Introduction](#introduction)
   - [Abstract](#abstract)
 - [How to Use](#how-to-use)
+  - [Installation](#installation)
+  - [Docs and Tutorial](#docs-and-tutorial)
 - [Project's Datasets](#projects-datasets)
 - [Research](#research)
   - [Results](#results)
@@ -42,6 +45,9 @@ One of the challenges in High-Energy Physics (HEP) is events classification, whi
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from image data. Although many previous works have tried to classify images with QCNN, none of them is fully quantum. They were still incorporating classical fully-connected layers after variational circuits. This project will be one of the first to try classifying images with a fully quantum implementation of QCNN and probably the first one to do so with particle jets images.
 
 ## How to Use
+
+### Package Description
+
 
 ### Package Dependencies
 - Python 3.7
