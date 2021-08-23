@@ -120,6 +120,8 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
+#### Quark-Gluon Dataset [[6](#references)]
+
 #### MNIST Dataset[[5](#references)]
 
 <p align="middle">
@@ -180,18 +182,6 @@ ___
 | :-------------: | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | 1 | 1 | 338 | 0.650 | 0.623 | ±120 |
 
-##### Test on Quark-Gluon Dataset
-> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), ... epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: log scaling -> MinMax scaling
-
-> optimizer: Adam(learning_rate=lr_schedule)
-
-| Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
-| ------------ | ----------- | :-------------------: | :-------: | :------: | :------------: | :-----------: | :----------------------: |
-| 1 | 1 | 2374 | 0.712 | 0.531 | 0.659 | 0.567 | 128 |
-| 1 | 2 | 2410 | 0.511 | 0.536 | 0.518 | 0.533 |  |
-| 1 | 3 | 2446 | 0.987 | 0.571 | 0.935 | 0.560 |  |
-| 2 | 1 | 2410 | 0.817 | 0.663 | 0.740 | 0.640 |  |
-
 ##### Test on LArTPC Dataset
 > 2 classes, 160 training samples (80 per class), 40 testing samples (20 per class), 200 epochs, 16 batch size, *varying* qubits, *varying* layers, filter size = [3, 2], stride = [2, 2], followed by classical head [2] with activation [softmax], classical preprocessing: log scaling -> MinMax scaling
 
@@ -243,6 +233,20 @@ ___
 | CNN | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 |
 | CNN | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 |
 
+##### Test on Quark-Gluon Dataset
+> **This part is still a working progress**. A much higher specs computational device (more RAMs) is needed for training the model because this dataset is huge.<br>Early testing with small samples showed a promising results. The training accuracies and AUCs are high, indicates that the model was able to learn how to differentiate the data. Low test metrics indicates overfitting, the model failed to generalize well -> we need to train the model on larger number of samples.
+  
+> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: log scaling -> MinMax scaling
+
+> optimizer: Adam(learning_rate=lr_schedule)
+
+| Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
+| ------------ | ----------- | :-------------------: | :-------: | :------: | :------------: | :-----------: | :----------------------: |
+| 1 | 1 | 2374 | 0.712 | 0.531 | 0.659 | 0.567 | 128 |
+| 1 | 2 | 2410 | 0.928 | 0.559 | 0.846 | 0.567 | 370 |
+| 1 | 3 | 2446 | 0.992 | 0.571 | 0.956 | 0.560 | 670 |
+| 2 | 1 | 2410 | 0.829 | 0.663 | 0.754 | 0.640 | 450 |
+  
 ##### Test on MNIST Dataset
 > 2 classes, 400 training samples (200 per class), 1000 testing samples (500 per class), 10 epochs, 32 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 2], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 27x27 -> pixels range [0, 1] (divide all pixels by 255)
 
