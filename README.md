@@ -74,12 +74,15 @@ python setup.py
 - Week 5: Tested the classical CNN and Fully-connected NN, started to train the QCNN v0.1.0 with varying filter size & stride, coded the new ansatz for quantum convolution layer based on [[4](#references)].
 - Week 6: Tested the new quantum convolution ansatz[[4](#references)], try to combine ideas from data re-uploading circuit to the new ansatz, presented a short summary about the project at the MCQST Student Conference.
 - Week 7: Tested the QCNN v0.1.1 on MNIST[[5](#references)] and LArTPC[[4](#references)] dataset.
-- Week 8: (on progress).
-
+- Week 8: Wrapped the code in the development notebooks as a Python package.
+- Week 9: Tested the QCNN v0.1.1 and classical CNN on the Quark-Gluon[[6](#references)] dataset.
+- Week 10: Cleaned up the repository, README, and the docs/tutorial notebook.
+<!---
 Notes:
 - A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
 - Progress of the *N*-th week contains things that have been done in that week.
 - To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
+--->
 
 ## Project's Datasets
 
@@ -322,6 +325,8 @@ ___
 [4] [Samuel Yen-Chi Chen, Tzu-Chieh Wei, Chao Zhang, Haiwang Yu, & Shinjae Yoo. (2020). Quantum Convolutional Neural Networks for High Energy Physics Data Analysis.](https://arxiv.org/abs/2012.12177)
 
 [5] [LeCun Y, Cortes C. MNIST handwritten digit database 2010.](http://yann.lecun.com/exdb/mnist/)
+
+[6] [Andrews, M., Alison, J., An, S., Burkle, B., Gleyzer, S., Narain, M., Paulini, M., Poczos, B., &amp; Usai, E. (2020). End-to-end jet classification of quarks and gluons with the cms open data. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 977, 164304.](https://www.sciencedirect.com/science/article/pii/S0168900220307002?via%3Dihub)
 
 <!---
 Semantic Versioning 2.0.0: https://semver.org/
