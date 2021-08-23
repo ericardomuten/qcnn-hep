@@ -26,6 +26,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - [Research](#research)
   - [Results](#results)
 - [References](#references)
+- [Contributing and Reporting](#contributing-and-reporting)
 
 ## Introduction
 
@@ -334,7 +335,18 @@ ___
 [6] [Andrews, M., Alison, J., An, S., Burkle, B., Gleyzer, S., Narain, M., Paulini, M., Poczos, B., &amp; Usai, E. (2020). End-to-end jet classification of quarks and gluons with the cms open data. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 977, 164304.](https://www.sciencedirect.com/science/article/pii/S0168900220307002?via%3Dihub)
 
 ## Contributing and Reporting
+### Contributing
+If you want to contribute to the code (e.g., adding new features, provide another example of usage in Jupyter Notebook, research results), please let me know by sending a pull request with a comprehensive PR note on new things that you added and the reasoning. I won't be too strict on it as the main goal of this project is more towards "research" rather than "code development". So, as long as it is clear and good enough, I will merge the PR.
 
+You can also open a [new issue](https://github.com/eraraya-ricardo/qcnn-hep/issues/new/choose) or contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) if you want to discuss things first.
+  
+### Reporting
+If you used the code and found any bugs/errors,<br>
+or<br>
+have any suggestions, critics, requests, etc.,<br>
+please let me know either by opening up a [new issue](https://github.com/eraraya-ricardo/qcnn-hep/issues/new/choose) or by contacting me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id).
+
+Thank you!
 
 <!---
 Semantic Versioning 2.0.0: https://semver.org/
