@@ -101,8 +101,6 @@ The dataset contains images from two types of particles: photons (0) and electro
 - In total, there are 498,000 samples, equally distributed between the two classes.
 - The size of the images are 32x32.
 
-The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tree/main/ParticleImagesChallenge).
-
 ### Secondary Dataset
 #### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
 
