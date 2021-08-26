@@ -235,24 +235,23 @@ ___
 | π+ vs μ+ | 1 | 3 | 190 | 1.0 | 0.863 | 1.0 | 0.825 | ±18 |
 | π+ vs μ+ | 2 | 1 | 160 | 1.0 | 0.890 | 1.0 | 0.925 | ±12 |
 | π+ vs μ+ | 2 | 2 | 220 | 1.0 | 0.977 | 1.0 | 0.950 | ±24 |
-  
 | π+ vs μ+ | 2 | 3 | 280 | 1.0 | 0.940 | 1.0 | 0.850 | ±36 |
 | π+ vs μ+ | 3 | 1 | 190 | 1.0 | 0.896 | 1.0 | 0.875 | ±18 |
 | π+ vs μ+ | 3 | 2 | 280 | 1.0 | 0.971 | 1.0 | 0.925 | ±35 |
 | π+ vs μ+ | 3 | 3 | 370 | 1.0 | 0.954 | 1.0 | 0.850 | ±55 |
 <!-- | p+ vs μ+ | 1 | 2 | 160 | 1.0 |  | 1.0 |  | ± | -->
 
+\-----
+
+> Comparison of Best Models.<br>The model developed in this project (<b>*</b>) produced similar results with the QCNN and classical CNN models from [[4](#references)] (<b>†</b>) with less number of qubits and trainable parameters. Reference [[4](#references)] didn't report their AUC scores.
   
 | Classes | Model | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy | Train AUC | Test AUC |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | e- vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 2<br>9<br>(classical) | 220<br>472<br>498 | 1.0<br>1.0<br>0.9938 | 0.950<br>0.925<br>0.950 | 1.0<br>-<br>- | 0.996<br>-<br>- |
-| p+ vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 1<br>2<br>9<br>(classical) | 130<br>472<br>498 | 1.0<br>1.0<br>0.9125 | 0.950<br>0.975<br>0.80 | 1.0<br>-<br>- | 0.980<br>-<br>- |
+| p+ vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 1<br>9<br>(classical) | 130<br>472<br>498 | 1.0<br>1.0<br>0.9125 | 0.950<br>0.975<br>0.80 | 1.0<br>-<br>- | 0.980<br>-<br>- |
 | π+ vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 2<br>9<br>(classical) | 220<br>472<br>498 | 1.0<br>0.9688<br>0.975 | 0.950<br>0.975<br>0.825 | 1.0<br>-<br>- | 0.977<br>-<br>- |
 
-\-----
-
-> Results reported in [[4](#references)] (as a comparison). The model developed in this project produced similar results (with the QCNN) with less number of qubits and trainable parameters.
-
+<!---
 | Model | Classes | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | QCNN | e- vs μ+ | 9 | 472 | 1.0 | 0.925 |
@@ -261,6 +260,7 @@ ___
 | CNN | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 |
 | CNN | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 |
 | CNN | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 |
+--->
 
 ##### Test on Quark-Gluon Dataset
 > **This part is still a working progress**. A much higher specs computational device (more RAMs) is needed for training the model because this dataset is huge.<br>Early testing with small samples showed a promising results. The training accuracies and AUCs are high, indicates that the model was able to learn how to differentiate the data. Low test metrics indicates overfitting, the model failed to generalize well -> we need to train the model on larger number of samples.
