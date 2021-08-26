@@ -241,6 +241,16 @@ ___
 | π+ vs μ+ | 3 | 3 | 370 | 1.0 | 0.954 | 1.0 | 0.850 | ±55 |
 <!-- | p+ vs μ+ | 1 | 2 | 160 | 1.0 |  | 1.0 |  | ± | -->
 
+  
+| Model | Classes | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy | Train AUC | Test AUC |
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+  | QCNN<b>*</b> | e- vs μ+ | 9 | 472 | 1.0 | 0.925 | (not reported) | (not reported) |
+| QCNN* | p+ vs μ+ | 9 | 472 | 1.0 | 0.975 | (not reported) | (not reported) |
+| QCNN* | π+ vs μ+ | 9 | 472 | 0.9688 | 0.975 | (not reported) | (not reported) |
+| CNN* | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 | (not reported) | (not reported) |
+| CNN* | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 | (not reported) | (not reported) |
+| CNN* | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 | (not reported) | (not reported) |
+
 \-----
 
 > Results reported in [[4](#references)] (as a comparison). The model developed in this project produced similar results (with the QCNN) with less number of qubits and trainable parameters.
