@@ -87,7 +87,7 @@ Notes:
 
 ## Project's Datasets
 
-### Primary Dataset: Photon-Electron Electromagnetic Calorimeter (ECAL) Dataset
+### Photon-Electron Electromagnetic Calorimeter (ECAL) Dataset
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/photon%20full.png" title="Photon" />
@@ -103,8 +103,7 @@ The dataset contains images from two types of particles: photons (0) and electro
   
 If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
 
-### Secondary Dataset
-#### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
+### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
 
 <p align="middle">
   <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
@@ -121,7 +120,7 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
-#### Quark-Gluon Dataset
+### Quark-Gluon Dataset
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-125-10k.png" title="Gluon" />
@@ -144,7 +143,7 @@ The dataset contains images of simulated quark and gluon jets. The image has thr
 
 If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
 
-#### MNIST Dataset[[5](#references)]
+### MNIST Dataset[[5](#references)]
 
 <p align="middle">
   <img height="300 px" src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
