@@ -244,12 +244,13 @@ ___
   
 | Model | Classes | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy | Train AUC | Test AUC |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-  | QCNN<b>*</b> | e- vs μ+ | 9 | 472 | 1.0 | 0.925 | (not reported) | (not reported) |
-| QCNN* | p+ vs μ+ | 9 | 472 | 1.0 | 0.975 | (not reported) | (not reported) |
-| QCNN* | π+ vs μ+ | 9 | 472 | 0.9688 | 0.975 | (not reported) | (not reported) |
-| CNN* | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 | (not reported) | (not reported) |
-| CNN* | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 | (not reported) | (not reported) |
-| CNN* | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 | (not reported) | (not reported) |
+| QCNN-DRC<b>†</b><br>QCNN<b>*</b> | e- vs μ+ | 2<br>9 | 220 | 1.0 | 0.950 | 1.0 | 0.996 |
+| QCNN<b>*</b> | e- vs μ+ | 9 | 472 | 1.0 | 0.925 | - | - |
+| QCNN<b>*</b> | p+ vs μ+ | 9 | 472 | 1.0 | 0.975 | - | - |
+| QCNN<b>*</b> | π+ vs μ+ | 9 | 472 | 0.9688 | 0.975 | - | - |
+| CNN<b>*</b> | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 | - | - |
+| CNN<b>*</b> | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 | - | - |
+| CNN<b>*</b> | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 | - | - |
 
 \-----
 
