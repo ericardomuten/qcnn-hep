@@ -126,7 +126,7 @@ The dataset can be obtained from the original authors of [[4](#references)] upon
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-125-10k.png" title="Gluon" />
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-125-10k.png" title="Quark" /> <br>
-  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 10k samples.</a>
+  <a>Averages of Gluon (left) and Quark (right) image samples of the track channel from the subdataset of 10k samples.</a>
 </p>
   
 <p align="middle">
@@ -265,7 +265,7 @@ ___
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-1k.png" title="Gluon" />
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-1k.png" title="Quark" /> <br>
-  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 1k samples after cropping to 40 x 40.</a>
+  <a>Averages of Gluon (left) and Quark (right) image samples of the track channel from the subdataset of 1k samples after cropping to 40 x 40.</a>
 </p>
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
