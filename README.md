@@ -132,7 +132,7 @@ The dataset can be obtained from the original authors of [[4](#references)] upon
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-10k.png" title="Gluon" />
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-10k.png" title="Quark" /> <br>
-  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 10k samples after cropping to 40 x 40.</a>
+  <a>Cropped to 40 x 40.</a>
 </p>
 
 The dataset contains images of simulated quark and gluon jets. The image has three channels, the first channel is the reconstructed tracks of the jet, the second channel is the images captured by the electromagnetic calorimeter (ECAL) detector, and the third channel is the images captured by the hadronic calorimeter (HCAL) detector.
