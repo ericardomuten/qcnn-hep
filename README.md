@@ -11,7 +11,7 @@
 A Google Summer of Code 2021 Project Repository.<br>
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data.<br>The <b>code used in the research is wrapped as an open-source package</b> to ease future research in this field.<br><b>Check the [How to Use](#how-to-use) section to learn more about it.</b>
 
-  <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/gsoc%40ml4sci.jpeg" /></a>
+  <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gsoc%40ml4sci.jpeg" /></a>
     
 </div>
 
@@ -80,18 +80,18 @@ python setup.py
 - Week 10: Cleaned up the repository, README, and the docs/tutorial notebook.
 <!---
 Notes:
-- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
+- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/qcnn-hep/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
 - Progress of the *N*-th week contains things that have been done in that week.
 - To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
 --->
 
 ## Project's Datasets
 
-### Primary Dataset: Electromagnetic Calorimeter (ECAL) Dataset
+### Primary Dataset: Photon-Electron Electromagnetic Calorimeter (ECAL) Dataset
 
 <p align="middle">
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" title="Photon" />
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png" title="Electron" /> <br>
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/photon%20full.png" title="Photon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/electron%20full.png" title="Electron" /> <br>
   <a>Averages of Photon (left) and Electron (right) image samples from the dataset.</a>
 </p>
   
@@ -100,12 +100,14 @@ The dataset contains images from two types of particles: photons (0) and electro
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
 - The size of the images are 32x32.
+  
+If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
 
 ### Secondary Dataset
 #### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
   <a>An image sample for each class from LArTPC dataset.</a>
 </p>
 
@@ -119,12 +121,21 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
-#### Quark-Gluon Dataset [[6](#references)]
+#### Quark-Gluon Dataset
+  
+The dataset contains images of simulated quark and gluon jets. The image has three channels, the first channel is the reconstructed tracks of the jet, the second channel is the images captured by the electromagnetic calorimeter (ECAL) detector, and the third channel is the images captured by the hadronic calorimeter (HCAL) detector.
+  
+- The images have a resolution of 125 x 125 pixels (for every channel).
+- Since the original size of 125 x 125 pixels is too large for quantum computing simulation, we cropped the images into certain size. For now, we limit the current size to 40 x 40 pixels.
+- In this study, we focus mostly on the tracks channel.
+- You can check reference [[6](#references)] for more details of the dataset.
+
+If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
 
 #### MNIST Dataset[[5](#references)]
 
 <p align="middle">
-  <img height="300 px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
+  <img height="300 px" src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
   <a>An image sample for each class from MNIST dataset.</a>
 </p>
 
@@ -171,7 +182,7 @@ ___
 | 3 | 2 | 370 | 0.707 | 0.636 | ±670 |
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
   <a>Validation AUC for Varying the Number of Layers and Qubits (0.0 = not tested).</a>
 </p>
 
@@ -187,17 +198,17 @@ ___
 > optimizer: RMSProp(learning_rate=0.01, rho=0.99, epsilon=1e-08)
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
   <a>Sample Images of e- vs μ+.</a>
 </p>
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
   <a>Sample Images of p+ vs μ+.</a>
 </p>
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_pion-plus.png" title="π+ vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_pion-plus.png" title="π+ vs μ+" /> <br>
   <a>Sample Images of π+ vs μ+.</a>
 </p>
 
