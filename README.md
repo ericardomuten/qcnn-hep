@@ -122,7 +122,19 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
 #### Quark-Gluon Dataset
+
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-125-10k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-125-10k.png" title="Quark" /> <br>
+  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 10k samples.</a>
+</p>
   
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-10k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-10k.png" title="Quark" /> <br>
+  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 10k samples after cropping to 40 x 40.</a>
+</p>
+
 The dataset contains images of simulated quark and gluon jets. The image has three channels, the first channel is the reconstructed tracks of the jet, the second channel is the images captured by the electromagnetic calorimeter (ECAL) detector, and the third channel is the images captured by the hadronic calorimeter (HCAL) detector.
   
 - The images have a resolution of 125 x 125 pixels (for every channel).
@@ -139,7 +151,7 @@ If you are interested on using the datast for your study, contact me via [email]
   <a>An image sample for each class from MNIST dataset.</a>
 </p>
 
-The dataset contains images of grayscale (8 bit) handwritten digits, has a training set of 60,000 examples, and a test set of 10,000 examples.
+The dataset contains images of grayscale (8 bit) handwritten digits, 28 x 28 pixels, has a training set of 60,000 examples, and a test set of 10,000 examples.
 
 It can be obtained from [[5](#references)].
 
@@ -246,9 +258,15 @@ ___
 ##### Test on Quark-Gluon Dataset
 > **This part is still a working progress**. A much higher specs computational device (more RAMs) is needed for training the model because this dataset is huge.<br>Early testing with small samples showed a promising results. The training accuracies and AUCs are high, indicates that the model was able to learn how to differentiate the data. Low test metrics indicates overfitting, the model failed to generalize well -> we need to train the model on larger number of samples.
   
-> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: log scaling -> MinMax scaling
+> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 40x40 -> log scaling -> MinMax scaling
 
 > optimizer: Adam(learning_rate=lr_schedule)
+  
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-1k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-1k.png" title="Quark" /> <br>
+  <a>Averages of Gluon (left) and Quark (right) image samples from the subdataset of 1k samples after cropping to 40 x 40.</a>
+</p>
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | ------------ | ----------- | :-------------------: | :-------: | :------: | :------------: | :-----------: | :----------------------: |
