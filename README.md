@@ -118,10 +118,11 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 - In total, there are 100 samples for each class.
 - Each particle’s momentum is set such that the mean range of the particle is about 2 meters, so the classification is not sensitive to the image size.
 - In this study, the images are scaled to 30x30, prepared by the original authors of the dataset.
+- You can check reference [[4](#references)] for more details of the dataset.
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
-### Quark-Gluon Dataset
+### Quark-Gluon Dataset[[6](#references)]
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-125-10k.png" title="Gluon" />
