@@ -65,7 +65,8 @@ python setup.py
 ```
 
 ### Docs and Tutorial
-- Main Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing) or click [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/tutorials/Main%20Tutorial.ipynb).
+- Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing)
+- Main Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing) or download from [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/tutorials/Main%20Tutorial.ipynb).
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
