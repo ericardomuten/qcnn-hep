@@ -63,6 +63,7 @@ cd qcnn-hep
 python -m pip install -r requirements.txt
 python setup.py
 ```
+For a more detail step-by-step installation, please refer to [Docs and Tutorial](#docs-and-tutorial)
 
 ### Docs and Tutorial
 - Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing)
