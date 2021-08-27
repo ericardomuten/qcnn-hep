@@ -66,7 +66,7 @@ python setup.py
 
 ### Docs and Tutorial
 - Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing)
-- Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing).
+- Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing)
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
