@@ -63,11 +63,11 @@ cd qcnn-hep
 python -m pip install -r requirements.txt
 python setup.py
 ```
-For a more detail step-by-step installation, please refer to [Docs and Tutorial](#docs-and-tutorial)
+For a more detail step-by-step installation, please refer to [Docs and Tutorial](#docs-and-tutorial).
 
 ### Docs and Tutorial
-- Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing)
-- Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing)
+- Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing) or download [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn_drc_docs.ipynb).
+- Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing) or download [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn_drc tutorial.ipynb).
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
