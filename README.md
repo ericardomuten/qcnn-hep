@@ -346,7 +346,19 @@ ___
 1. **lr_schedule**
 
     ```
-    lr = 1e-3
+    def lr_schedule(epoch):
+        """Learning Rate Schedule
+
+        Learning rate is scheduled to be reduced after 80, 120, 160, 180 epochs.
+        Called automatically every epoch as part of callbacks during training.
+
+        # Arguments
+            epoch (int): The number of epochs
+
+        # Returns
+            lr (float32): learning rate
+        """
+        lr = 1e-3
         if epoch > 180:
             lr *= 0.5e-3
         elif epoch > 160:
@@ -355,6 +367,15 @@ ___
             lr *= 1e-2
         elif epoch > 80:
             lr *= 1e-1
+        print('Learning rate: ', lr)
+        return lr
+  
+    # Both `lr_scheduler` and `lr_reducer` are used for `callbacks` argument of Keras' model training API
+    lr_scheduler = tf.keras.callbacks.LearningRateScheduler(lr_schedule)
+    lr_reducer = tf.keras.callbacks.ReduceLROnPlateau(factor=np.sqrt(0.1),
+                                   cooldown=0,
+                                   patience=5,
+                                   min_lr=0.5e-6)
     ```
 
 ## References
