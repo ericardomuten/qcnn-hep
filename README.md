@@ -33,7 +33,7 @@ This project aims to demonstrate quantum machine learning's potential, specifica
 - **Organization**
   - [Machine Learning for Science (ML4Sci)](https://ml4sci.org/)
 - **Student**
-  - [Eraraya Ricardo Muten](https://eraraya-ricardo.me/)
+  - [Eraraya Ricardo Muten](https://ericardomuten.com/)
 - **Mentors**
   - [Prof. Sergei V. Gleyzer](http://sergeigleyzer.com/), [Dr. Emanuele Usai](https://orcid.org/0000-0001-9323-2107), and [Raphael Koh](https://www.raphaelkoh.me/)
 - **Project Details**
