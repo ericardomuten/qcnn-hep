@@ -144,7 +144,7 @@ The dataset contains images of simulated quark and gluon jets. The image has thr
 - In this study, we focus mostly on the tracks channel.
 - You can check reference [[6](#references)] for more details of the dataset.
 
-If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
+If you are interested on using the datast for your study, contact me and I can try to connect you to the people at ML4Sci who have the dataset.
 
 ### MNIST Dataset[[5](#references)]
 
