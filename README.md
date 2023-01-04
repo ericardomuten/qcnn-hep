@@ -395,10 +395,10 @@ ___
 ### Contributing
 If you want to contribute to the code (e.g., adding new features, provide another example of usage in Jupyter Notebook, research results), please let me know by sending a pull request with a comprehensive PR note on new things that you added and the reasoning. I won't be too strict on it as the main goal of this project is more towards "research" rather than "code development". So, as long as it is clear and good enough, I will merge the PR.
 
-You can also open a [new issue](https://github.com/eraraya-ricardo/qcnn-hep/issues/new/choose) or contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) if you want to discuss things first.
+You can also open a [new issue](https://github.com/eraraya-ricardo/qcnn-hep/issues/new/choose) or contact me if you want to discuss things first.
   
 ### Reporting
-If you used the code and found any bugs/errors, or have any suggestions, critics, requests, etc., please let me know either by opening up a [new issue](https://github.com/eraraya-ricardo/qcnn-hep/issues/new/choose) or by contacting me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id).
+If you used the code and found any bugs/errors, or have any suggestions, critics, requests, etc., please let me know either by opening up a [new issue](https://github.com/ericardomuten/qcnn-hep/issues/new/choose) or by contacting me.
 
 Thank you!
 
