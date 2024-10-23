@@ -26,7 +26,7 @@ setup(
     name='qcnn_drc',
     version='1.0.0',
     author='Eraraya Ricardo Muten',
-    author_email='eraraya-ricardo@qlab.itb.ac.id',
+    author_email='eraraya.ricardo19@gmail.com',
     description="Tensorflow Quantum implementation of Quantum Convolutional Neural Networks",
     long_description="This package is a TensorFlow Quantum implementation of quantum convolution and classifier with Data Re-uploading ansatz. Both are wrapped as Keras layers that can easily be integrated into other Keras layers (classical and/or quantum), acting as building blocks for Quantum Convolutional Neural Networks (both hybrid and fully quantum). The model can be trained using Keras API.",
     packages=['qcnn_drc'],
